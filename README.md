@@ -21,7 +21,7 @@ To install locally:
 * Install the [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 * Use _git clone_ to download this repository to a local directory
 * Navigate to this local directory in your terminal
-* Navigate to the _/ToDoList.Test_ folder in your terminal
+* Navigate to the _/ToDoList.Tests_ folder in your terminal
 * Enter _dotnet restore_ to install testing packages
 * Navigate to the _/ToDoList_ folder in your terminal
 * Enter _dotnet run_ to build and run the program
