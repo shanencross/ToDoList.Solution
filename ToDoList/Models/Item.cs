@@ -1,5 +1,5 @@
 namespace ToDoList.Models {
-  public class OurModel {
+  public class Item {
 
   }
 }

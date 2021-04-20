@@ -3,9 +3,9 @@ using ToDoList.Models;
 
 namespace ToDoList.Tests {
   [TestClass]
-  public class OurModelTests {
+  public class ItemTests {
     [TestMethod]
-    public void OurModel_SomeCondition_ExpectedValue() {
+    public void Item_SomeCondition_ExpectedValue() {
       Assert.AreEqual(true, false);
     }
   }
