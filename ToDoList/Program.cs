@@ -18,6 +18,10 @@ namespace ToDoList {
           Console.Write("'" + newItem.Description + "' has been added to your list. ");
         } 
         else if (userInput == "view") {
+          if (Item.Instances.Count == 0) {
+            Console.WriteLine("No items added yet.");
+          }
+          
           for (int i = 0; i < Item.Instances.Count; i++) {
             int num = i + 1;
             Item currentItem = Item.Instances[i];
