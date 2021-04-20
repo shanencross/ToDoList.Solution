@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CSharpTemplate.Models;
+using ToDoList.Models;
 
-namespace CSharpTemplate.Tests {
+namespace ToDoList.Tests {
   [TestClass]
   public class OurModelTests {
     [TestMethod]
