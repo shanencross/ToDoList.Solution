@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CSharpTemplate\CSharpTemplate.csproj" />  
+    <ProjectReference Include="..\ToDoList\ToDoList.csproj" />  
   </ItemGroup>
 
 </Project>
