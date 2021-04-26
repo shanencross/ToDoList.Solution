@@ -48,7 +48,8 @@ namespace ToDoList.Tests {
     }
     
     [TestMethod]
-    public void GetAll_ReturnsEmptyList_ItemList() {
+    public void GetAll_ReturnsEmptyList_ItemList() 
+    {
       // Arrange
       List<Item> newList = new List<Item> {};
       
@@ -60,7 +61,8 @@ namespace ToDoList.Tests {
     }
 
     [TestMethod]
-    public void GetAll_ReturnsItems_ItemList() {
+    public void GetAll_ReturnsItems_ItemList() 
+    {
       // Arrange
       string description01 = "Walk the dog";
       string description02 = "Wash the dishes";
