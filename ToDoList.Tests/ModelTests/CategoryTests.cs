@@ -1,12 +1,19 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ToDoList.Models;
 using System.Collections.Generic;
+using System;
 
-namespace ToDoList.Models
+
+namespace ToDoList.Tests
 {
-  public class Category
+  [TestClass]
+  public class CategoryTests
   {
-    private static List<Category> _instances = new List<Category> {};
-    public string Name { get; set; }
-    public int Id { get; }
-    public List<Item> Items { get; set; }
+    [TestMethod]
+    public void CategoryConstructor_CreatesInstanceOfCategory_Category()
+    {
+      Category newCategory = new Category("test category");
+      Assert.AreEqual(typeof(Category), newCategory.GetType());
+    }
   }
 }
