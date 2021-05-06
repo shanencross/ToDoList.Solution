@@ -59,12 +59,11 @@ namespace ToDoList.Tests
       Category newCategory1 = new Category(name01);
       Category newCategory2 = new Category(name02);
       List<Category> newList = new List<Category> { newCategory1, newCategory2 };
-
       //Act
       List<Category> result = Category.GetAll();
 
       //Assert
-      Assert.AreEqual(newList, result);
+      CollectionAssert.AreEqual(newList, result);
     }
 
     [TestMethod]
