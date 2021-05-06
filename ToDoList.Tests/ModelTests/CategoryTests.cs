@@ -36,7 +36,7 @@ namespace ToDoList.Tests
       Assert.AreEqual(name, result);
     }
 
-      [TestMethod]
+    [TestMethod]
     public void GetId_ReturnsCategoryId_Int()
     {
       //Arrange
@@ -50,6 +50,7 @@ namespace ToDoList.Tests
       Assert.AreEqual(1, result);
     }
 
+    [TestMethod]
     public void GetAll_ReturnsAllCategoryObjects_CategoryList()
     {
       //Arrange
@@ -64,8 +65,6 @@ namespace ToDoList.Tests
 
       //Assert
       Assert.AreEqual(newList, result);
-
-
     }
   }
 }
