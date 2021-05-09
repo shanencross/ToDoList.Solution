@@ -3,5 +3,6 @@
 <h2>@Model["item"].Description</h2>
 <h3>Category: @Model["category"].Name</h3>
 
-<a href="/items/new">Add another item</a>
-<a href="/items">View all items</a>
+<p><a href='/categories/@Model["category"].Id/items/new'>Add another item</a></p>
+<p><a href='/categories/@Model["category"].Id'>View category</a></p>
+<p><a href="/categories">View all categories</a></p>
