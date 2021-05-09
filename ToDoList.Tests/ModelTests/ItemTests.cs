@@ -54,7 +54,7 @@ namespace ToDoList.Tests {
       List<Item> newList = new List<Item> {};
       
       // Act
-      List<Item> result = Item.Instances;
+      List<Item> result = Item.GetAll();
       
       // Assert
       CollectionAssert.AreEqual(newList, result);
@@ -71,7 +71,7 @@ namespace ToDoList.Tests {
       List<Item> newList = new List<Item> { newItem1, newItem2 };
 
       // Act
-      List<Item> result = Item.Instances;
+      List<Item> result = Item.GetAll();
 
       // Assert
       CollectionAssert.AreEqual(newList, result);
