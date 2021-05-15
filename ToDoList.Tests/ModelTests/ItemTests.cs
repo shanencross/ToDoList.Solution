@@ -52,19 +52,6 @@ namespace ToDoList.Tests {
   //     // Assert
   //     Assert.AreEqual(updatedDescription, result);
   //   }
-    
-  //   [TestMethod]
-  //   public void GetAll_ReturnsEmptyList_ItemList() 
-  //   {
-  //     // Arrange
-  //     List<Item> newList = new List<Item> {};
-      
-  //     // Act
-  //     List<Item> result = Item.GetAll();
-      
-  //     // Assert
-  //     CollectionAssert.AreEqual(newList, result);
-  //   }
 
     [TestMethod]
     public void GetAll_ReturnsItems_ItemList() 
@@ -93,16 +80,23 @@ namespace ToDoList.Tests {
   //     Assert.AreEqual(1,result);
   //   }
 
-  //   [TestMethod]
-  //   public void Find_ReturnsCorrectItem_Item()
-  //   {
-  //     string description01 = "Walk the dog";
-  //     string description02 = "Wash the dishes";
-  //     Item newItem1 = new Item(description01);
-  //     Item newItem2 = new Item (description02);
-  //     Item result = Item.Find(2);
-  //     Assert.AreEqual(newItem2, result);
-  //   }
+    [TestMethod]
+    public void Find_ReturnsCorrectItemFromDataBase_Item()
+    {
+      //Arrange
+      string description01 = "Walk the dog";
+      string description02 = "Wash the dishes";
+      Item newItem1 = new Item(description01);
+      newItem1.Save();
+      Item newItem2 = new Item (description02);
+      newItem2.Save();
+
+      //Act
+      Item foundItem = Item.Find(2);
+      
+      //Assert
+      Assert.AreEqual(newItem2, foundItem);
+    }
 
     [TestMethod]
     public void GetAll_ReturnsEmptyListFromDatabase_ItemList()
