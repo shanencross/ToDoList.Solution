@@ -4,6 +4,9 @@
 # vscode files
 .vscode/
 
+# Database configuration
+*/appsettings.json
+
 # User-specific files
 *.suo
 *.user
