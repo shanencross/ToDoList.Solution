@@ -122,7 +122,7 @@ namespace ToDoList.Models
         itemId = rdr.GetInt32(0);
         itemDescription = rdr.GetString(1);
       }
-      Item foundItem= new Item(itemDescription, itemId);
+      Item foundItem = new Item(itemDescription, itemId);
 
       // We close the connection.
       conn.Close();
