@@ -32,6 +32,11 @@ namespace ToDoList.Models
       }
     }
 
+    public override int GetHashCode() 
+    {
+      return Description.GetHashCode();
+    }
+
     public void Save()
     {
       MySqlConnection conn = DB.Connection();
