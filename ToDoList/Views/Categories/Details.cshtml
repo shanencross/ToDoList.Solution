@@ -12,7 +12,7 @@
 @foreach(Item item in Model.Items)
 {
   @* <li>@Html.DisplayFor(model => item.Description)</li> *@
-  <li>@item.Description</li>
+  <li>@Html.ActionLink(item.Description, "Details", "Items", new {id = item.ItemId})</li>
 }
 </ul>
 <p>@Html.ActionLink("Back to list", "Index")</p>
