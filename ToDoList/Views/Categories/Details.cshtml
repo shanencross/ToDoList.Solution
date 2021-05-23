@@ -1,4 +1,4 @@
-@{
+@* @{
   Layout = "_Layout";
 }
 
@@ -11,10 +11,10 @@
 <ul>
 @foreach(Item item in Model.Items)
 {
-  @* <li>@Html.DisplayFor(model => item.Description)</li> *@
+  <li>@Html.DisplayFor(model => item.Description)</li>
   <li>@Html.ActionLink(item.Description, "Details", "Items", new {id = item.ItemId})</li>
 }
 </ul>
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Edit Category", "Edit", new { id = Model.CategoryId })</p>
-<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</p>
+<p>@Html.ActionLink("Delete Category", "Delete", new { id = Model.CategoryId })</p> *@
