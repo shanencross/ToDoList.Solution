@@ -17,11 +17,12 @@ else
   <ul>
   @foreach(var join in Model.JoinEntities)
   {
-    <li>@join.Category.Name</li>
+    <li>@Html.ActionLink(@join.Category.Name, "Details", "Categories", new {id = join.Category.CategoryId})</li>
   }
   </ul>
 }
 
 <p>@Html.ActionLink("Back to list", "Index")</p>
 <p>@Html.ActionLink("Edit Item", "Edit", new { id = Model.ItemId })</p>
+<p>@Html.ActionLink("Add a category", "AddCategory", new {id = Model.ItemId } )</p>
 <p>@Html.ActionLink("Delete Item", "Delete", new { id = Model.ItemId })</p>
