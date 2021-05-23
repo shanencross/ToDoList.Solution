@@ -18,6 +18,11 @@ else
   @foreach(var join in Model.JoinEntities)
   {
     <li>@Html.ActionLink(@join.Category.Name, "Details", "Categories", new {id = join.Category.CategoryId})</li>
+    @using (Html.BeginForm("DeleteCategory", "Items"))
+    {
+      @Html.Hidden("joinId", @join.CategoryItemId)
+      <input type="submit" value="Delete"/>
+    }
   }
   </ul>
 }
